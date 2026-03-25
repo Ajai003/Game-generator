@@ -61,16 +61,16 @@ const containerVariants = {
   visible: {
     transition: { staggerChildren: 0.1 },
   },
-}
+} as const
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.34, 1.56, 0.64, 1] },
+    transition: { duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as const },
   },
-}
+} as const
 
 export default function GameCategories() {
   return (

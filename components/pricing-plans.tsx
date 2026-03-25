@@ -65,16 +65,16 @@ const plans = [
 const containerVariants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.15 } },
-}
+} as const
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.34, 1.56, 0.64, 1] },
+    transition: { duration: 0.7, ease: [0.34, 1.56, 0.64, 1] as const },
   },
-}
+} as const
 
 export default function PricingPlans() {
   return (
