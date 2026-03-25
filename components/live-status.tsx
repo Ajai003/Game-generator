@@ -123,7 +123,7 @@ export default function LiveStatus() {
               transition={{
                 duration: 0.6,
                 delay: i * 0.1,
-                ease: [0.34, 1.56, 0.64, 1],
+                ease: "easeInOut",
               }}
             >
               <Card

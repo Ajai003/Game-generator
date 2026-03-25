@@ -51,7 +51,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: [0.34, 1.56, 0.64, 1] }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
       className={`fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 ${
         scrolled ? "pt-3" : "pt-5"
       }`}
