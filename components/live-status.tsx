@@ -103,7 +103,7 @@ export default function LiveStatus() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-green-400 via-neon-cyan to-neon-blue bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-green-400 via-neon-cyan to-neon-blue bg-clip-text text-transparent">
               Live Status
             </span>
           </h2>

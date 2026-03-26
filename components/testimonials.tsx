@@ -102,7 +102,7 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-neon-cyan via-neon-blue to-neon-purple bg-clip-text text-transparent">
               What Gamers Say
             </span>
           </h2>
@@ -140,7 +140,7 @@ export default function Testimonials() {
                 {/* Author */}
                 <div className="flex items-center gap-4">
                   <div
-                    className={`w-12 h-12 rounded-full bg-gradient-to-br ${t.gradient} flex items-center justify-center text-white font-bold text-lg shadow-lg`}
+                    className={`w-12 h-12 rounded-full bg-linear-to-br ${t.gradient} flex items-center justify-center text-white font-bold text-lg shadow-lg`}
                   >
                     {t.name.charAt(0)}
                   </div>

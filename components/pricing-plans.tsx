@@ -89,7 +89,7 @@ export default function PricingPlans() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-neon-purple via-neon-blue to-neon-cyan bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-neon-purple via-neon-blue to-neon-cyan bg-clip-text text-transparent">
               Pricing Plans
             </span>
           </h2>
@@ -119,13 +119,13 @@ export default function PricingPlans() {
               >
                 {/* Highlighted gradient bg */}
                 {plan.highlighted && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-pink-500/10 pointer-events-none" />
+                  <div className="absolute inset-0 bg-linear-to-br from-purple-500/10 via-transparent to-pink-500/10 pointer-events-none" />
                 )}
 
                 <CardContent className="p-8 relative">
                   {/* Badge */}
                   {plan.highlighted && (
-                    <Badge className="absolute top-4 right-4 bg-gradient-to-r from-neon-purple to-neon-pink text-white border-0 shadow-lg shadow-neon-purple/30">
+                    <Badge className="absolute top-4 right-4 bg-linear-to-r from-neon-purple to-neon-pink text-white border-0 shadow-lg shadow-neon-purple/30">
                       <Zap className="h-3 w-3 mr-1" />
                       Popular
                     </Badge>
@@ -142,7 +142,7 @@ export default function PricingPlans() {
                     <span
                       className={`text-4xl font-bold ${
                         plan.highlighted
-                          ? "bg-gradient-to-r from-neon-purple to-neon-blue bg-clip-text text-transparent"
+                          ? "bg-linear-to-r from-neon-purple to-neon-blue bg-clip-text text-transparent"
                           : "text-white"
                       }`}
                     >
@@ -159,7 +159,7 @@ export default function PricingPlans() {
                         className="flex items-center gap-2.5 text-sm text-white/60"
                       >
                         <Check
-                          className={`h-4 w-4 flex-shrink-0 ${
+                          className={`h-4 w-4 shrink-0 ${
                             plan.highlighted
                               ? "text-neon-purple"
                               : "text-neon-cyan/60"

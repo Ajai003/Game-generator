@@ -163,7 +163,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black z-10">
           <div className="relative w-48 h-1 bg-white/10 rounded-full overflow-hidden">
             <motion.div
-              className="absolute inset-y-0 left-0 bg-gradient-to-r from-neon-cyan to-neon-purple rounded-full"
+              className="absolute inset-y-0 left-0 bg-linear-to-r from-neon-cyan to-neon-purple rounded-full"
               initial={{ width: "0%" }}
               animate={{ width: `${loadProgress}%` }}
               transition={{ duration: 0.3 }}
@@ -176,13 +176,13 @@ export default function HeroSection() {
       )}
 
       {/* Bottom gradient overlay */}
-      <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none z-10" />
+      <div className="absolute inset-x-0 bottom-0 h-80 bg-linear-to-t from-background via-background/80 to-transparent pointer-events-none z-10" />
 
       {/* Top vignette */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(0,0,0,0.6)_100%)] pointer-events-none z-10" />
 
       {/* Animated glow orbs in background */}
-      <div className="absolute inset-0 pointer-events-none z-[5] overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-5 overflow-hidden">
         <motion.div
           className="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-neon-purple/10 blur-[100px]"
           animate={{ x: [0, 40, 0], y: [0, -30, 0] }}

@@ -34,14 +34,14 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-white/5">
       {/* Neon accent line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neon-purple/50 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-neon-purple/50 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Gamepad2 className="h-6 w-6 text-neon-cyan" />
-            <span className="text-lg font-bold bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">
+            <span className="text-lg font-bold bg-linear-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">
               GAME CENTER
             </span>
           </div>

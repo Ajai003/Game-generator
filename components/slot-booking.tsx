@@ -62,7 +62,7 @@ export default function SlotBooking() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-neon-blue via-neon-purple to-neon-cyan bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-neon-blue via-neon-purple to-neon-cyan bg-clip-text text-transparent">
               Book Your Slot
             </span>
           </h2>
@@ -142,7 +142,7 @@ export default function SlotBooking() {
                             ? "bg-red-500/5 border-red-500/10 text-red-400/40 cursor-not-allowed"
                             : isSelected
                               ? "bg-blue-500/10 border-blue-400/20 text-blue-300/80"
-                              : "bg-white/[0.03] border-white/8 text-green-400/60 hover:bg-green-500/8 hover:border-green-400/15 hover:text-green-400/80"
+                              : "bg-white/3 border-white/8 text-green-400/60 hover:bg-green-500/8 hover:border-green-400/15 hover:text-green-400/80"
                         }`}
                       >
                         {slot.time}

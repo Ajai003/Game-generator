@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, type Variants } from "framer-motion"
+import { motion } from "framer-motion"
 import {
   Gamepad2,
   Sword,
@@ -56,19 +56,19 @@ const categories = [
   },
 ]
 
-const containerVariants: Variants = {
+const containerVariants = {
   hidden: {},
   visible: {
     transition: { staggerChildren: 0.1 },
   },
 }
 
-const cardVariants: Variants = {
+const cardVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeInOut" },
+    transition: { duration: 0.6, ease: "easeInOut" as const },
   },
 }
 
@@ -85,7 +85,7 @@ export default function GameCategories() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-neon-cyan via-neon-blue to-neon-purple bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-neon-cyan via-neon-blue to-neon-purple bg-clip-text text-transparent">
               Game Categories
             </span>
           </h2>
@@ -110,7 +110,7 @@ export default function GameCategories() {
                 <CardContent className="p-6">
                   {/* Icon */}
                   <div
-                    className={`w-14 h-14 rounded-xl bg-gradient-to-br ${cat.color} flex items-center justify-center mb-4 shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}
+                    className={`w-14 h-14 rounded-xl bg-linear-to-br ${cat.color} flex items-center justify-center mb-4 shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}
                   >
                     <cat.icon className="h-7 w-7 text-white" />
                   </div>
@@ -124,7 +124,7 @@ export default function GameCategories() {
                   </p>
 
                   {/* Hover shimmer */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
+                  <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/3 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
                 </CardContent>
               </Card>
             </motion.div>

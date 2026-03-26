@@ -44,7 +44,7 @@ export default function LocationContact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent">
               Find Us
             </span>
           </h2>
@@ -64,7 +64,7 @@ export default function LocationContact() {
             <Card className="glass border-white/5 overflow-hidden h-full min-h-[320px]">
               <CardContent className="p-0 relative h-full">
                 {/* Fake map background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0a0e1a] via-[#111827] to-[#0f172a]">
+                <div className="absolute inset-0 bg-linear-to-br from-[#0a0e1a] via-[#111827] to-[#0f172a]">
                   {/* Grid lines */}
                   <div
                     className="absolute inset-0 opacity-10"
@@ -94,7 +94,7 @@ export default function LocationContact() {
                   {/* Decorative circles */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-neon-cyan/10 rounded-full" />
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 border border-neon-cyan/5 rounded-full" />
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-neon-cyan/[0.03] rounded-full" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 border border-neon-cyan/3 rounded-full" />
                 </div>
 
                 {/* Label */}
@@ -126,7 +126,7 @@ export default function LocationContact() {
                 <Card className="glass border-white/5 hover:border-white/10 transition-all duration-300 group">
                   <CardContent className="p-5 flex items-start gap-4">
                     <div
-                      className={`w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110`}
+                      className={`w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110`}
                     >
                       <item.icon className={`h-5 w-5 ${item.color}`} />
                     </div>
